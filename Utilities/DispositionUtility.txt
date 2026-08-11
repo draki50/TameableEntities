@@ -1,0 +1,52 @@
+using RimWorld;
+using Verse;
+
+namespace TameableAnomalies.Utilities
+{
+    public static class DispositionUtility
+    {
+        public static EntityDisposition GetDisposition(Pawn pawn)
+        {
+            float progress = ConditioningUtility.GetConditioningProgress(pawn);
+
+            if (progress >= 1.0f)
+                return EntityDisposition.Tamed;
+            if (progress >= 0.80f)
+                return EntityDisposition.Loyal;
+            if (progress >= 0.60f)
+                return EntityDisposition.Cooperative;
+            if (progress >= 0.45f)
+                return EntityDisposition.NonHostile;
+            if (progress >= 0.30f)
+                return EntityDisposition.Wary;
+            if (progress >= 0.15f)
+                return EntityDisposition.Suspicious;
+
+            return EntityDisposition.Hostile;
+        }
+
+        public static string GetDispositionName(EntityDisposition disposition)
+        {
+            return disposition switch
+            {
+                EntityDisposition.Hostile => "Hostile",
+                EntityDisposition.Suspicious => "Suspicious",
+                EntityDisposition.Wary => "Wary",
+                EntityDisposition.NonHostile => "Non-Hostile",
+                EntityDisposition.Cooperative => "Cooperative",
+                EntityDisposition.Loyal => "Loyal",
+                EntityDisposition.Tamed => "Tamed",
+                _ => "Unknown"
+            };
+        }
+        public static bool CanReturnToHoldingPlatform(Pawn pawn)
+        {
+            return GetDisposition(pawn) >= EntityDisposition.NonHostile;
+        }
+        public static bool CanReleaseAsAlly(Pawn pawn)
+        {
+            return GetDisposition(pawn) == EntityDisposition.Tamed;
+        }
+    }
+
+}
