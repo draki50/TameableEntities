@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<ThoughtDef>
+		<defName>TA_ImplantedMetalhorrorLarva</defName>
+		<durationDays>5</durationDays>
+
+		<stages>
+			<li>
+				<label>Implanted with a metalhorror larva</label>
+				<description>Someone implanted a metalhorror larva inside of me! I can feel it growing... It's horrible!</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+
+	</ThoughtDef>
+
+</Defs>

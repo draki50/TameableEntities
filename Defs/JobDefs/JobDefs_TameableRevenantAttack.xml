@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<JobDef>
+		<defName>TameableRevenantAttack</defName>
+
+		<driverClass>TameableAnomalies.Jobs.JobDriver_TameableRevenantAttack</driverClass>
+
+		<reportString>hypnotizing target.</reportString>
+	</JobDef>
+
+</Defs>

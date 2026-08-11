@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnColumnDef>
+		<defName>TameableAnomalies_EntityFollowDrafted</defName>
+		<workerClass>TameableAnomalies.PawnColumns.PawnColumnWorker_EntityFollowDrafted</workerClass>
+		<sortable>true</sortable>
+		<headerIcon>UI/Icons/Animal/FollowDrafted</headerIcon>
+		<headerTip>Follow master while the master is drafted.</headerTip>
+		<paintable>true</paintable>
+	</PawnColumnDef>
+
+	<PawnColumnDef>
+		<defName>TameableAnomalies_EntityFollowFieldwork</defName>
+		<workerClass>TameableAnomalies.PawnColumns.PawnColumnWorker_EntityFollowFieldwork</workerClass>
+		<sortable>true</sortable>
+		<headerIcon>UI/Icons/Animal/FollowFieldwork</headerIcon>
+		<headerTip>Follow master while the master is doing field work.</headerTip>
+		<paintable>true</paintable>
+	</PawnColumnDef>
+
+	<PawnColumnDef>
+		<defName>TameableAnomalies_EntityMaster</defName>
+		<workerClass>TameableAnomalies.PawnColumns.PawnColumnWorker_EntityMaster</workerClass>
+	</PawnColumnDef>
+
+	<PawnColumnDef>
+		<defName>TameableAnomalies_EntityMedicalCare</defName>
+		<workerClass>TameableAnomalies.PawnColumns.PawnColumnWorker_EntityMedicalCare</workerClass>
+	</PawnColumnDef>
+
+
+</Defs>
