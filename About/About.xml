@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ModMetaData>
+
+  <name>Tameable Entities</name>
+
+  <author>Pyromann</author>
+
+  <packageId>pyromann.conditionedentities</packageId>
+
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+
+</ModMetaData>

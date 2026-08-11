@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+  <MainButtonDef>
+    <defName>Entities</defName>
+    <label>entities</label>
+    <description>Manage conditioned anomalies.</description>
+
+    <tabWindowClass>TameableAnomalies.MainTabs.MainTabWindow_Entities</tabWindowClass>
+
+    <order>45</order>
+
+    <closesWorldView>true</closesWorldView>
+
+  </MainButtonDef>
+
+</Defs>

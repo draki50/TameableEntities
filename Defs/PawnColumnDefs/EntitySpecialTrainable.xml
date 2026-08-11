@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<PawnColumnDef>
+		<defName>TameableAnomalies_EntitySpecialTrainable</defName>
+
+		<workerClass>PawnColumnWorker_Trainable_Special</workerClass>
+
+		<width>72</width>
+
+		<sortable>true</sortable>
+
+		<headerTip>Special training</headerTip>
+	</PawnColumnDef>
+
+</Defs>

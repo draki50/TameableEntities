@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+	<Operation Class="PatchOperationSequence">
+
+		<!-- Create the <comps> node if it doesn't exist -->
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Metalhorror"]</xpath>
+				<value>
+					<comps />
+				</value>
+			</li>
+
+			<!-- Add our custom comp -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="Metalhorror"]/comps</xpath>
+				<value>
+					<li Class="TameableAnomalies.CompPropertiesLarvaImplanter"/>
+				</value>
+			</li>
+
+		</operations>
+
+	</Operation>
+
+</Patch>

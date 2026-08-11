@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+	<JobDef>
+		<defName>TA_ImplantLarva</defName>
+
+		<driverClass>TameableAnomalies.Jobs.JobDriver_ImplantLarva</driverClass>
+
+		<reportString>implanting metalhorror larva.</reportString>
+
+	</JobDef>
+
+</Defs>
